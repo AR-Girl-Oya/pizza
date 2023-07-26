@@ -1,5 +1,6 @@
 {
-  "homepage":"https://AR-Girl-Oya.github.com/pizza_order",
+  "homepage":".",
+  "proxy": "http://localhost:8000",
   "name": "client",
   "version": "0.1.0",
   "private": true,

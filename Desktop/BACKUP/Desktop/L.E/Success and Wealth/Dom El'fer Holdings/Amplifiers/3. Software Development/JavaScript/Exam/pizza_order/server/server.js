@@ -18,17 +18,7 @@ const io = new Server(server , {
     }
 });
 
-io.on("connection" , (socket) => {
-    console.log('We are connected')
 
-    socket.on("chat" , chat => {
-        io.emit('chat' , chat)
-    });
-
-    socket.on('disconnect', ()=> {
-        console.log('disconnected')
-    });
-});
 
 const _dirname = path.dirname("");
 const buildPath = path.join(_dirname, "../client/build");
